@@ -34,6 +34,6 @@ endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
 set (CMAKE_CXX_STANDARD 11)
-add_executable(meantest pch.cpp test.cpp)
+add_executable(meantest meantest/pch.cpp meantest/test.cpp)
 target_link_libraries(meantest gtest_main)
 add_test(NAME example_test COMMAND meantest)
